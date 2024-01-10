@@ -30,6 +30,13 @@ class TestFuncs(unittest.TestCase):
         self.assertFalse(Ex1funcs.is_prime(-7))   
         self.assertTrue(Ex1funcs.is_prime(13))                 
 
+    def test_is_arithmetic_sequence(self):
+        self.assertTrue(Ex1funcs.is_arithmetic_sequence([2, 4, 6, 8, 10]))   
+        self.assertTrue(Ex1funcs.is_arithmetic_sequence([1, 5, 9, 13, 17]))  
+        self.assertTrue(Ex1funcs.is_arithmetic_sequence([3, 0, -3, -6, -9]))  
+        self.assertFalse(Ex1funcs.is_arithmetic_sequence([1, 3, 6, 10, 15]))  
+        self.assertFalse(Ex1funcs.is_arithmetic_sequence([2, 5, 10, 17, 26])) 
+        self.assertTrue(Ex1funcs.is_arithmetic_sequence([]))                
 
 
 if __name__ == '__main__':
