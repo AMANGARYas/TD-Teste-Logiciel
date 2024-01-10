@@ -18,7 +18,17 @@ class TestFuncs(unittest.TestCase):
         self.assertEqual(Ex1funcs.min_n([], 5), [])
 
 
-             
+    def test_is_prime(self):
+        self.assertTrue(Ex1funcs.is_prime(2))      
+        self.assertTrue(Ex1funcs.is_prime(3))      
+        self.assertTrue(Ex1funcs.is_prime(5))      
+        self.assertFalse(Ex1funcs.is_prime(4))     
+        self.assertFalse(Ex1funcs.is_prime(9))     
+        self.assertTrue(Ex1funcs.is_prime(11))    
+        self.assertFalse(Ex1funcs.is_prime(1))     
+        self.assertFalse(Ex1funcs.is_prime(0))     
+        self.assertFalse(Ex1funcs.is_prime(-7))   
+        self.assertTrue(Ex1funcs.is_prime(13))                 
 
 
 
