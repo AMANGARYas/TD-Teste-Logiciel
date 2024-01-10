@@ -39,6 +39,14 @@ class TestFuncs(unittest.TestCase):
         self.assertTrue(Ex1funcs.is_arithmetic_sequence([]))                
 
 
+    def test_is_geometric_sequence(self):
+        self.assertTrue(Ex1funcs.is_geometric_sequence([2, 4, 8, 16, 32]))    
+        self.assertTrue(Ex1funcs.is_geometric_sequence([1, 3, 9, 27, 81]))    
+        self.assertTrue(Ex1funcs.is_geometric_sequence([3, 6, 12, 24, 48]))       
+        self.assertFalse(Ex1funcs.is_geometric_sequence([2, 6, 12, 20, 30]))  
+        self.assertTrue(Ex1funcs.is_geometric_sequence([1, 1, 1, 1, 1]))      
+        self.assertTrue(Ex1funcs.is_geometric_sequence([]))       
+        
 if __name__ == '__main__':
     unittest.main()
 
