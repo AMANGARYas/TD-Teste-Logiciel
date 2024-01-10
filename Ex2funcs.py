@@ -1,13 +1,17 @@
+
+
 class FIFO:
     def __init__(self):
         self.queue = []
 
     def enqueue(self, item):
-    	pass
+        self.queue.append(item)
 
     def dequeue(self):
-    	pass
+        if not self.is_empty():
+            return self.queue.pop(0)
+        return None
 
     def is_empty(self):
-    	pass
+        return len(self.queue) == 0
 
