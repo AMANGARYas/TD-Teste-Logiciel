@@ -1,7 +1,8 @@
 
 
 def max_three(lst):
-	pass
+    return sorted(lst, reverse=True)[:3]
+    
 
 def min_n(lst, n):
 	pass
