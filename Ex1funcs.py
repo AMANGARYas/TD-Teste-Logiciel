@@ -5,7 +5,8 @@ def max_three(lst):
     
 
 def min_n(lst, n):
-	pass
+    return sorted(lst)[:n]
+
 	
 def is_prime(n):
 	pass
