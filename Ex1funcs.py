@@ -19,8 +19,7 @@ def is_prime(n):
     
 def is_arithmetic_sequence(sequence):
     if len(sequence) < 2:
-        return True  # Une séquence de moins de deux éléments est considérée comme une suite arithmétique
-
+        return True 
     common_difference = sequence[1] - sequence[0]
 
     for i in range(2, len(sequence)):
@@ -31,6 +30,16 @@ def is_arithmetic_sequence(sequence):
     
 
 def is_geometric_sequence(sequence):
-	pass
+    if len(sequence) < 2:
+        return True  
+
+    common_ratio = sequence[1] / sequence[0]
+
+    for i in range(2, len(sequence)):
+        if sequence[i] / sequence[i - 1] != common_ratio:
+            return False
+
+    return True
+
 
 
