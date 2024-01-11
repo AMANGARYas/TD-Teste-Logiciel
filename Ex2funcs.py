@@ -22,12 +22,15 @@ class LIFO:
         self.stack = []
 
     def push(self, item):
-        pass
-
+        self.stack.append(item)
+      
     def pop(self):
-    	pass
+        if not self.is_empty():
+            return self.stack.pop()
+        return None
+
 
     def is_empty(self):
- 
-        pass
+        return len(self.stack) == 0
+        
 
